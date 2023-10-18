@@ -14,7 +14,7 @@ if (isset($_POST['name'], $_POST['subject'], $_POST['message'], $_POST['email'])
     $mail->SMTPAuth = true;
     $mail->Username = 'yassine@yassinedrani.com';
     $mail->Password = 'Forabetterlife2020@'; // Replace with your actual password
-    $mail->setFrom('yassine@yassinedrani.com', 'yassine'); // Replace 'Your Name' with your name
+    $mail->setFrom('yassine@yassinedrani.com', 'Your Name'); // Replace 'Your Name' with your name
     $mail->addAddress('yassine@yassinedrani.com'); // Replace with your email address
     $mail->Subject = "$m_subject: $name";
     $mail->Body = "You have received a new message from your website contact form.\n\nName: $name\n\nEmail: $email\n\nSubject: $m_subject\n\nMessage: $message";
